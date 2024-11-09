@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 ----
 
 ## Setting up your font
@@ -100,3 +101,7 @@ This license is available with a FAQ at https://openfontlicense.org
 ## Repository Layout
 
 This font repository structure is inspired by [Unified Font Repository v0.3](https://github.com/unified-font-repository/Unified-Font-Repository), modified for the Google Fonts workflow.
+=======
+# school-sans
+Variable humanistic sans-serif typeface
+>>>>>>> 69b1b09 (Initial commit)
