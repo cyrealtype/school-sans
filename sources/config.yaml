@@ -7,33 +7,32 @@
 # sources/ directory, so all paths should be relative to that
 # directory.
 sources:
-  - RadioCanadaDisplay.glyphs
-  - RadioCanadaDisplay-Italic.glyphs
+  - SchoolSans.glyphs
 # You don't have to supply the family name, but builds are slightly
 # faster if you do.
-familyName: "Radio Canada Display"
+familyName: "School Sans"
 
 # Next you can supply alternative paths for where you want the
 # binaries to live. But we'd recommend you stick to the defaults
 # especially if you are planning to upload your font to Google Fonts.
 
-# outputDir: ../fonts
-# vfDir: $outputDir/variable
-# ttDir: $outputDir/ttf
-# otDir: $outputDir/otf
-# woffDir: $outputDir/webfonts
+outputDir: ../fonts
+vfDir: $outputDir/variable
+ttDir: $outputDir/ttf
+otDir: $outputDir/otf
+woffDir: $outputDir/webfonts
 
 # The following entries, which are either "true" or "false"
 # determine which targets to build. We turn off OTFs for this demo.
 
-# buildVariable: true
+buildVariable: true
 # buildStatic: true
-# buildTTF: true
-buildOTF: false
+buildTTF: true
+# buildOTF: false
 # buildSmallCap: false
 
 # The next flags control autohinting.
-# autohintTTF: true
+autohintTTF: true
 # autohintOTF: false
 # ttfaUseScript: false  # Set this to true if your font is not Latin
 
@@ -44,13 +43,13 @@ buildOTF: false
 
 # These options give fine-grained control over how fontmake builds
 # the fonts.
-# flattenComponents: true
-# decomposeTransformedComponents: true
-# checkCompatibility: true
-# overlaps: booleanOperations
-# expandFeaturesToInstances: false
-# reverseOutlineDirection: true
-# removeOutlineOverlaps: true
+flattenComponents: true
+decomposeTransformedComponents: true
+checkCompatibility: true
+overlaps: booleanOperations
+expandFeaturesToInstances: false
+reverseOutlineDirection: true
+removeOutlineOverlaps: true
 # extraFontmakeArgs: ""
 # extraVariableFontmakeArgs: ""
 # extraStaticFontmakeArgs: ""
@@ -63,10 +62,12 @@ buildOTF: false
 # if you specify a dictionary which does not contain an entry
 # for each VF file built.
 stat:
-  RadioCanadaDisplay[wght].ttf:
+  SchoolSans[wght].ttf:
   - name: Weight
     tag: wght
     values:
+    - name: Light
+      value: 300
     - name: Regular
       value: 400
       linkedValue: 700
@@ -77,29 +78,3 @@ stat:
       value: 600
     - name: Bold
       value: 700
-  - name: Italic
-    tag: ital
-    values:
-    - name: Roman
-      value: 0
-      linkedValue: 1
-      flags: 2
-  RadioCanadaDisplay-Italic[wght].ttf:
-  - name: Weight
-    tag: wght
-    values:
-    - name: Regular
-      value: 400
-      linkedValue: 700
-      flags: 2
-    - name: Medium
-      value: 500
-    - name: SemiBold
-      value: 600
-    - name: Bold
-      value: 700
-  - name: Italic
-    tag: ital
-    values:
-    - name: Italic
-      value: 1
